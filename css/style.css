@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #add8e6;
+    padding-top: 1em;
+}
+
+footer{
+    background-color: #23272a;
+    margin-top: 2px solid #d3d3d3;
+}
+
+.boxed{                                 /*classe per allineare bene */
+    max-width: 1250px;                   /*meglio dare in pixel per fissare bene la pagina o usare % per farla adattare al dispositivo */
+    margin: 0 auto;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1250px;
+}
+
+.alignItemCenter{
+    align-items: center;
+}
+.alignItemTop{
+    align-items: flex-start;
+}
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;     
+}
+.flexContainerReverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;     
+}
+
+.yellowbox{
+    background-color: #daa520;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.bluebox{
+    background-color: #00008b;
+    padding: 3em;
+    
+}
+
+.pinkbox{
+    background-color: #ee82ee;
+    margin: 0 auto;
+    max-width: 950px;
+    min-height: 420px;
+    padding: 1em;
+}
+
+.white{
+    background-color: white;
+    padding: 3em;
+}
+.lightblue{
+    background-color: #1e90ff;
+    width: calc(100% - 40%);/*prendi il 100% della larghezza */
+    min-height: 520px;                                             
+   
+}
+
+
+.lightpink{
+    background-color: pink ;
+    width: calc(100% - 60%);
+    min-height: 520px; 
+}
+
+
+
+.lightgrey{
+    background-color: #d3d3d3;
+    padding: 3em;
+}
+.green{
+    background-color: #228b22;
+    min-height: 920px; 
+}
+
+.black{
+    background-color: #23272a;
+}
+
+.salmon{
+    background-color: #f08080;
+    width: calc((100% / 6) * 2);
+    min-height: 520px;
+}
+.aqua{
+    background-color: #20b2aa;
+    width: calc((100% / 6) * 1);
+}
+.lightaqua{
+    background-color: #7fffd4;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
