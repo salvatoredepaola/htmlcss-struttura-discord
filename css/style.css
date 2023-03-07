@@ -1,121 +1,102 @@
+/********************
+CSS ELEMENTI GENERICI 
+*********************/
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
-header{
-    background-color: #add8e6;
-    padding-top: 1em;
-}
-
-footer{
-    background-color: #23272a;
-    padding-top: 2em;
-    border-top: 2px solid #d3d3d3;
-}
-
 .boxed{                                 /*classe per allineare bene */
     max-width: 1250px;                   /*meglio dare in pixel per fissare bene la pagina o usare % per farla adattare al dispositivo */
     margin: 0 auto;
 }
 
-.container{
-    margin: 0 auto;
-    max-width: 1250px;
-}
-
-.alignItemCenter{
-    align-items: center;
-}
-.alignItemTop{
-    align-items: flex-start;
-}
-
-.flexContainer{
+.flex{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;     
-}
-.flexContainerReverse{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;     
 }
 
-.yellowbox{
-    background-color: #daa520;
-    padding: 0.5em;
-    margin-bottom: 1em;
+.hMin520{ min-height: 520px;}
+.space {padding: 3em;}
+.col {padding: 10px;}
+
+.text-left { text-align: left;}
+.text-center { text-align: center;}
+.text-right { text-align: right;}
+.alignItemCenter {align-items: center;}
+.alignItemTop {align-items: flex-start;}
+.space-between {justify-content: space-between;}
+
+
+.bg-arancio {background-color: orange;}
+.bg-lightblue {background-color: lightblue;}
+.bg-pink { background-color: pink;}
+.bg-blue {background-color: dodgerblue;}
+.bg-gray {background-color: #d3d3d3;}
+.bg-coral {background-color: lightcoral;}
+.bg-teal {background-color: teal;}
+.bg-aquamarine {background-color: aquamarine;}
+.bg-violet {background-color: violet;}
+.bg-black {background-color: #222;}
+
+.col10 {width: 10%;}
+.col20 {width: 20%;}
+.col25 {width: 25%;}
+.col30 {width: 30%;}
+.col40 {width: 40%;}
+.col50 {width: 50%;}
+.col60 {width: 60%;}
+.col70 {width: 70%;}
+.col80 {width: 80%;}
+
+.MiniColumn {width: calc((100% / 6) * 1);}
+
+/******************
+CSS ELEMENTI PAGINA
+*******************/
+header {
+    background-color: lightblue;
+}
+
+.navbar{                        /*navbar usato per i link in alto alla pagina */
+    display: flex;
+    height: 80px;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+footer{
+    border-top: 2px solid #d3d3d3;
 }
 
 .bluebox{
-    background-color: #00008b;
-    padding: 3em;
-    
+    background-color: darkblue;
+    padding: 3em;  
 }
 
 .pinkbox{
-    background-color: #ee82ee;
     margin: 0 auto;
     max-width: 950px;
     min-height: 420px;
-    padding: 1em;
 }
 
-.white{
-    background-color: white;
-    padding: 3em;
-}
-.lightblue{
-    background-color: #1e90ff;
-    width: calc(100% - 40%);/*prendi il 100% della larghezza */
-    min-height: 520px;                                             
-   
-}
-
-
-.lightpink{
-    background-color: pink ;
-    width: calc(100% - 60%);
-    min-height: 520px; 
-}
-
-
-
-.lightgrey{
-    background-color: #d3d3d3;
-    padding: 3em;
-}
 .green{
     background-color: #228b22;
     min-height: 920px; 
 }
 
-.black{
-    background-color: #23272a;
-    padding-bottom: 3em;
-    padding-top: 1em;
-}
-
-.salmon{
-    background-color: #f08080;
+/*
+.coral{
     width: calc((100% / 6) * 2);
-    min-height: 520px;
 }
-.aqua{
-    background-color: #20b2aa;
-    width: calc((100% / 6) * 1);
-}
-.lightaqua{
-    background-color: #7fffd4;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
+*/
 
 footer p{
     display: flex;
-    background-color: #ffb5c1;
     align-items: center;
     justify-content: center;
     width: 70px;
@@ -124,8 +105,8 @@ footer p{
 
 
 button{
-    background-color: #ffb5c1;
     border: none;
     width: 95px;
     height: 40px;
 }
+
